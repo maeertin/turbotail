@@ -29,8 +29,14 @@ yarn-error.log*
 .env.test.local
 .env.production.local
 
+# vercel
+.vercel
+
 # turbo
 .turbo
+
+# storybook
+storybook-static
 
 # ui
 dist/

@@ -1,5 +1,5 @@
-// styles
-import "./styles.css";
+// NOTE: For some reason this file must be a `.tsx` file to be able to build correctly.
+import './styles.css'
 
-// components
-export * from "./card";
+export * from './components'
+export * from './utils'

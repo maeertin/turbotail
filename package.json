@@ -10,6 +10,9 @@
   "devDependencies": {
     "eslint": "^8.48.0",
     "prettier": "^3.0.3",
+    "prettier-plugin-jsdoc": "^1.0.2",
+    "prettier-plugin-organize-imports": "^3.2.3",
+    "prettier-plugin-style-order": "^0.2.2",
     "prettier-plugin-tailwindcss": "^0.5.3",
     "tsconfig": "*",
     "turbo": "latest"

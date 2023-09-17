@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --spacing-header-height: 56px;
+    --spacing-grid-margin: 16px;
+    --spacing-grid-gutter: 4px;
+
+    @screen lg {
+      --spacing-grid-margin: 24px;
+      --spacing-grid-gutter: 8px;
+    }
+  }
+
+  /**
+   * LIGHT PALETTE
+   */
+  :root,
+  .light,
+  [data-color-scheme='light'] {
+    /* The colors used to represent default interface elements for a user. */
+    --palette-default: theme('colors.common.black');
+    --palette-default-light: #343434;
+    --palette-default-dark: theme('colors.common.black');
+    --palette-default-contrast: theme('colors.common.white');
+
+    /* The colors used to style the text. */
+    --palette-text-primary: theme('colors.common.black');
+    --palette-text-secondary: rgba(theme('colors.common.blackChannel') / 0.64);
+    --palette-text-disabled: rgba(theme('colors.common.blackChannel') / 0.32);
+    --palette-text-contrast: theme('colors.common.white');
+
+    /* The colors used to style the surfaces. */
+    --palette-surface: theme('colors.common.white');
+    --palette-surface-paper: #fafafa;
+
+    /* The color used to divide different elements. */
+    --palette-divider: rgba(theme('colors.common.blackChannel') / 0.12);
+
+    /* The colors used to style the action elements. */
+    --palette-action-disabled: rgba(theme('colors.common.blackChannel') / 0.32);
+    --palette-action-disabledBg: rgba(theme('colors.common.blackChannel') / 0.12);
+  }
+
+  /**
+   * DARK PALETTE
+   */
+  .dark,
+  [data-color-scheme='dark'] {
+    /* The colors used to represent default interface elements for a user. */
+    --palette-default: theme('colors.common.white');
+    --palette-default-light: #dddddd;
+    --palette-default-dark: theme('colors.common.white');
+    --palette-default-contrast: theme('colors.common.black');
+
+    /* The colors used to style the text. */
+    --palette-text-primary: theme('colors.common.white');
+    --palette-text-secondary: rgba(theme('colors.common.whiteChannel') / 0.64);
+    --palette-text-disabled: rgba(theme('colors.common.whiteChannel') / 0.32);
+    --palette-text-contrast: theme('colors.common.black');
+
+    /* The colors used to style the surfaces. */
+    --palette-surface: theme('colors.common.black');
+    --palette-surface-paper: #212121;
+
+    /* The color used to divide different elements. */
+    --palette-divider: rgba(theme('colors.common.whiteChannel') / 0.2);
+
+    /* The colors used to style the action elements. */
+    --palette-action-disabled: rgba(theme('colors.common.whiteChannel') / 0.32);
+    --palette-action-disabledBg: rgba(theme('colors.common.whiteChannel') / 0.12);
+  }
+
+  html {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+  body {
+    color: var(--palette-text-primary);
+    background-color: var(--palette-surface);
+  }
+}

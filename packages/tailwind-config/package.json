@@ -5,6 +5,7 @@
   "main": "index.ts",
   "types": "index.ts",
   "devDependencies": {
+    "tailwind-typography": "*",
     "tailwindcss": "^3.2.4"
   }
 }
